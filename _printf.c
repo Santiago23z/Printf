@@ -13,34 +13,36 @@ int _printf(const char *format, ...)
 	va_list valist;
 	int (*f)(va_list);
 
-	if (format == NULL)
-		return (-1);
+	if (!format || (format[0] == '%' && !format[1]))
+        	return (-1);
+    	if (format[0] == '%' && format[1] == ' ' && !format[2])
+        	return (-1);
 	va_start(valist, format);
 	while (format[i])
 	{
-		for (; format[i] != '%' && format[i]; i++)
+		if (format[i] != '%')
 		{
 			_putchar(format[i]);
 			count++;
 		}
-		if (!format[i])
-			return (count);
-		f = get_function(format[i + 1]);
-		if (f != NULL)
-		{
-			count += f(valist);
-			i += 2;
-			continue;
-		}
-		if (!format[i + 1])
-			return (-1);
-		_putchar(format[i]);
-		count++;
-		if (format[i + 1] == '%')
-			i += 2;
 		else
+		{
 			i++;
-	}
+			if (format[i] == '%')
+			{
+				count += _putchar('%');
+			}
+			else
+			{
+				f = get_function(format[i]);
+				if (f == NULL)
+					_printf("%%%c", format[i]);
+				else
+					count += f(valist);
+			}
+		}
+		i++;
+	}	
 	va_end(valist);
 	return (count);
 }
