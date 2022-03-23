@@ -12,13 +12,14 @@ int _printf(const char *format, ...)
 	unsigned int i = 0, count = 0;
 	va_list valist;
 	int (*f)(va_list);
-
+	
+	va_start(valist, format);
 	if (!format || (format[0] == '%' && !format[1]))
         	return (-1);
     	if (format[0] == '%' && format[1] == ' ' && !format[2])
         	return (-1);
-	va_start(valist, format);
-	while (format[i])
+
+	while (format[i] != '\0')
 	{
 		if (format[i] != '%')
 		{
@@ -35,7 +36,7 @@ int _printf(const char *format, ...)
 			else
 			{
 				f = get_function(format[i]);
-				if (f == NULL)
+				if (!f)
 					_printf("%%%c", format[i]);
 				else
 					count += f(valist);
