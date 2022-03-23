@@ -5,7 +5,7 @@
  * @z: el caracter que se compara
  * Return: '\0'
  */
-int (*get_function(char *s))(int, int)
+int (*get_function(char *s))(va_list)
 {
 print_t y[] = {
 {"s", print_s},
