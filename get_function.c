@@ -12,7 +12,8 @@ print_t y[] = {
 {"c", print_c},
 {"i", print_i},
 {"d", print_d},
-{NULL, NULL}};
+{NULL, NULL}
+};
 
 int i = 0;
 while (i < 5)
