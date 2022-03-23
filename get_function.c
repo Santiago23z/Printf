@@ -2,10 +2,10 @@
 
 /**
  * get_function - seleccione el formato a imprimir
- * @z: el caracter que se compara
+ * @s: el caracter que se compara
  * Return: '\0'
  */
- int (*get_function(char s))(va_list)
+int (*get_function(char s))(va_list)
 {
 printf_t y[] = {
 {"s", print_s},

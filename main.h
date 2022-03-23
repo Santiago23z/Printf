@@ -7,7 +7,8 @@
 #include <stdlib.h>
 
 /**
- * Structure - Structure for printing variuos
+ * struct print -unsigned int ui;
+    void *addr; Structure for printing variuos
  * @g: Letter to print
  * @j: function to print
  */
@@ -27,4 +28,4 @@ int print_d(va_list d);
 int percent(va_list o);
 int (*get_function(char s))(va_list);
 int _strcmp(char *s1, char *s2);
-#endif /* _MAIN_H */ 
+#endif /* _MAIN_H */

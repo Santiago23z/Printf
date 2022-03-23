@@ -2,7 +2,7 @@
 
 /**
  * print_c - Imprime caracter
- * @v: Caracter a imprimir
+ * @c: Caracter a imprimir
  * Return: 1
  */
 
@@ -16,7 +16,7 @@ int print_c(va_list c)
 
 /**
  * print_s - imprimir cadena
- * @r: cadena a imprimir
+ * @s: cadena a imprimir
  * Return: numero de caracteres impresos
  */
 int print_s(va_list s)
