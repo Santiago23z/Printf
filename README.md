@@ -1,4 +1,4 @@
-# _printf
+# _printf 🫡
 
 is a function of the C language that is programmed to print numbers, strings, char, is a custom implementation of the C programming function printf. This project is an application of the C programming knowledge that Holberton School Cohort 17 students have learned since they started the program on January 31, 2022
 
