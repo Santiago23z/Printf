@@ -4,7 +4,7 @@ is a function of the C language that is programmed to print numbers, strings, ch
 
 ***Prototype: int _printf(const char *, ...);***
 
-**Examples**
+## Examples
 
 **string**
 - input: _printf("%s\n", 'This is a string.');
