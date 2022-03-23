@@ -26,7 +26,7 @@ int print_s(va_list s)
 
 	if (str == NULL)
 		str = "(null)";
-	for (count = 0; str[count]; count++)
+	for (count = 0; str[count] != '\0'; count++)
 	{
 		_putchar(str[count]);
 	}
