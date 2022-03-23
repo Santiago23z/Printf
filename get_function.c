@@ -5,20 +5,22 @@
  * @z: el caracter que se compara
  * Return: '\0'
  */
-static int (*get_function(char *s))(va_list)
+ int (*get_function(char s))(va_list)
 {
 printf_t y[] = {
 {"s", print_s},
 {"c", print_c},
 {"i", print_i},
 {"d", print_d},
+{"%", percent},
 {NULL, NULL}
 };
 
 int i = 0;
+char *e = &s;
 while (i < 5)
 {
-if (strcmp(y[i].g, s) == 0)
+if (_strcmp(y[i].g, e) == 0)
 return (y[i].j);
 i++;
 }

@@ -32,3 +32,14 @@ int print_s(va_list s)
 	}
 	return (count);
 }
+
+/**
+ * percent - porcentaje
+ * @perc: variable
+ * Return: %
+ */
+int percent(va_list perc)
+{
+	(void)perc;
+	return (_putchar('%'));
+}

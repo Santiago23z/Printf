@@ -25,5 +25,6 @@ int print_s(va_list s);
 int print_i(va_list i);
 int print_d(va_list d);
 int percent(va_list o);
-static int (*get_function(char *s))(va_list);
+int (*get_function(char s))(va_list);
+int _strcmp(char *s1, char *s2);
 #endif /* _MAIN_H */ 
