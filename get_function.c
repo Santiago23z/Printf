@@ -7,7 +7,7 @@
  */
 int (*get_function(char *s))(va_list)
 {
-print_t y[] = {
+printf_t y[] = {
 {"s", print_s},
 {"c", print_c},
 {"i", print_i},

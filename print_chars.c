@@ -6,11 +6,11 @@
  * Return: 1
  */
 
-int print_c(va_list v)
+int print_c(va_list c)
 {
 	char vh = (char)va_arg(c, int);
 
-	_putchar(ch);
+	_putchar(vh);
 	return (1);
 }
 
@@ -19,10 +19,10 @@ int print_c(va_list v)
  * @r: cadena a imprimir
  * Return: numero de caracteres impresos
  */
-int print_s(va_list r)
+int print_s(va_list s)
 {
 	int count;
-	char *str = va_arg(r, char *);
+	char *str = va_arg(s, char *);
 
 	if (str == NULL)
 		str = "(null)";
