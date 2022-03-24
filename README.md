@@ -4,7 +4,7 @@ is a function of the C language that is programmed to print numbers, strings, ch
 
 ***Prototype: int _printf(const char *, ...);***
 
-## Examples
+## Examples📚
 
 **string**
 - input: _printf("%s\n", 'This is a string.');
@@ -22,7 +22,7 @@ is a function of the C language that is programmed to print numbers, strings, ch
 - input: _printf("%d\n", 1000);
 - output: 1000
 
-## Project Requirements
+## Project Requirements📝
 
 - All files will be compiled on Ubuntu 14.04 LTS
 - Programs and functions will be compiled with gcc 4.8.4 using flags -Wall -Werror -Wextra and -pedantic
@@ -37,13 +37,13 @@ is a function of the C language that is programmed to print numbers, strings, ch
   - va_copy (man 3 va_copy)
   - va_arg (man 3 va_arg)
 
-**Mandatory Tasks**
+**Mandatory Tasks**📌
 
 - Write function that produces output with conversion specifiers c, s, and %.
 - Handle conversion specifiers d, i.
 - Create a man page for your function.
 
-## File Descriptions
+## File Descriptions👨🏻‍💻
 
 - _printf.c: - contains the fucntion _printf, which uses the prototype int _printf(const char *format, ...);. The format string is composed of zero or more directives. See man 3 printf for more detail. _printf will return the number of characters printed (excluding the null byte used to end output to strings) and will write output to stdout, the standard output stream.
 
@@ -56,8 +56,8 @@ is a function of the C language that is programmed to print numbers, strings, ch
 - print_unsigned_int.c: - contains the functions print_u, print_o, and print_b, which handle the conversion specifiers u, o, and b, respectively
 - print_rot13.c - contains the function print_R, which handles the conversion specifier R
 
-**Authors**
-- **Santiago zapata alvarez**
-- **Swaider Tobon**
+**Authors**😎
+- **Santiago zapata alvarez**🫡
+- **Swaider Tobon**🫡
 
  
