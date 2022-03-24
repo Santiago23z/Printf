@@ -10,8 +10,8 @@ int (*get_function(char s))(va_list)
 printf_t y[] = {
 {"s", print_s},
 {"c", print_c},
-{"i", print_i},
-{"d", print_d},
+{"i", print_i},                         
+{"d", print_d},                         
 {"%", percent},
 {NULL, NULL}
 };

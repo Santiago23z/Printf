@@ -8,11 +8,12 @@
  * Return: number of characters printed
  */
 int _printf(const char *format, ...)
-{
+{                                                                              
 unsigned int i = 0, count = 0;
 va_list valist;
 int (*f)(va_list);
 va_start(valist, format);
+
 if (!format || (format[0] == '%' && !format[1]))
 return (-1);
 if (format[0] == '%' && format[1] == ' ' && !format[2])
@@ -30,15 +31,12 @@ else
 i++;
 if (format[i] == '%')
 {
-count += _putchar('%');
+count += _putchar('%');                                                         
 }
 else
 {
 f = get_function(format[i]);
-if (!f)
-_printf("%%%c", format[i]);
-else
-count += f(valist);
+count += (f) ? f(valist) : _printf("%%%c", format[i]);
 }
 }
 i++;
