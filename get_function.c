@@ -25,4 +25,3 @@ i++;
 }
 return (NULL);
 }
-//prueba
