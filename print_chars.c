@@ -43,3 +43,4 @@ int percent(va_list perc)
 	(void)perc;
 	return (_putchar('%'));
 }
+//prueba
