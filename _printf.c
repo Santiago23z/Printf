@@ -44,4 +44,3 @@ i++;
 va_end(valist);
 return (count);
 }
-//prueba
